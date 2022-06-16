@@ -1,29 +1,29 @@
-class Passaro
-    def falar
-      puts "Canta!"
-    end
-  
-    def mover(destino)
-      puts "Voando para #{destino}."
-    end
-  end
-  
-  class Cachorro
-    def falar
-      puts "Late!"
-    end
-  
-    def mover(destino)
-     puts "Correndo para #{destino}."
-    end
-  end
-  
-  class Gato
-    def falar
-      puts "Mia!"
-    end
-  
-    def mover(destino)
-      puts "Correndo para #{destino}."
+def falar(tipo_animal, nome)
+    if tipo_animal == "passaro"
+      puts "#{nome} canta!"
+    elsif tipo_animal == "cachorro"
+      puts "#{nome} late!"
+     elsif tipo_animal == "gato"
+        puts "#{nome} mia!"
      end
-  end
+end
+
+falar("cachorro","Bob")
+falar("gato","Mimi")
+falar("passaro","Dorinha")
+
+class Cachorro
+    attr_accessor :nome
+    attr_reader :raca # não consegue alterar a raça
+    def initialize(nome, raca)
+        @nome = nome
+        @raca = raca
+        puts "Nome: #{nome}\nRaça: #{raca}"
+    end
+    def latir(latido = "AU AU!")
+        puts "Latido: #{latido}"
+    end
+end
+
+dog = Cachorro.new("Bob", "Poodle")
+puts dog.latir
