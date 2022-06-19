@@ -12,6 +12,7 @@ falar("cachorro","Bob")
 falar("gato","Mimi")
 falar("passaro","Dorinha")
 
+puts "-----------------------------------------------------------"
 class Cachorro
     attr_accessor :nome
     attr_reader :raca # não consegue alterar a raça
