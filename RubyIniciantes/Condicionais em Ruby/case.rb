@@ -1,0 +1,31 @@
+puts "Digite um mês:"
+mes = gets.chomp
+
+case mes 
+when "janeiro" 
+    puts "Tem 31 dias"
+when "fevereiro" 
+    puts "Tem 28 dias"
+when "março" 
+    puts "Tem 30 dias"
+when "abril" 
+    puts "Tem 30 dias"
+when "maio" 
+    puts "Tem 31 dias"
+when "junho" 
+    puts "Tem 30 dias"
+when "julho" 
+    puts "Tem 31 dias"
+when "agosto" 
+    puts "Tem 31 dias"
+when "setembro" 
+    puts "Tem 30 dias"
+when "outubro" 
+    puts "Tem 31 dias"
+when "novembro" 
+    puts "Tem 30 dias"
+when "dezembro" 
+    puts "Tem 31 dias"
+else
+    puts "Mễs Inválido"
+end
