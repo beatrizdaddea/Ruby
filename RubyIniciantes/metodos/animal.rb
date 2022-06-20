@@ -9,22 +9,10 @@ def falar(tipo_animal, nome)
 end
 
 falar("cachorro","Bob")
+puts "-----------------------------------------------------------"
 falar("gato","Mimi")
+puts "-----------------------------------------------------------"
 falar("passaro","Dorinha")
 
-puts "-----------------------------------------------------------"
-class Cachorro
-    attr_accessor :nome
-    attr_reader :raca # não consegue alterar a raça
-    def initialize(nome, raca)
-        @nome = nome
-        @raca = raca
-        puts "Nome: #{nome}\nRaça: #{raca}"
-    end
-    def latir(latido = "AU AU!")
-        puts "Latido: #{latido}"
-    end
-end
 
-dog = Cachorro.new("Bob", "Poodle")
-puts dog.latir
+
