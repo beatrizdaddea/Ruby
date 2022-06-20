@@ -5,4 +5,4 @@ puts "-----------------------"
 lista.insert(3,"Fulano")
 puts lista
 lista.delete("Fulano")
-puts lista
+puts lista  
