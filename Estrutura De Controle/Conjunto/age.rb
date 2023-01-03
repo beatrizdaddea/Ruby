@@ -1,4 +1,3 @@
-result = ''
 loop do
   puts result 
   puts 'Selecione uma das seguintes opções'
@@ -23,3 +22,5 @@ loop do
   # Comando que limpa o console
   system "clear"
 end
+
+result = ''
